@@ -1,6 +1,10 @@
 # Interpreter: Python 3.12.3
 import math
 
+# ** COMO USAR **
+# Simplemente des-comentar el llamado a la función que se quiera probar
+# al pie del archivo y ejecutar main.py
+
 
 # ====================================================================
 # EJERCICIO 1: [Hello world]
@@ -231,6 +235,52 @@ def ejercicio_9():
     # Fin
 
 
+# ====================================================================
+# EJERCICIO 10: [Crear un programa que pida al usuario 3 números e imprima por pantalla el promedio de
+# dichos números.]
+# ====================================================================
+# El código del ejercicio 10 aquí
+def ejercicio_10():
+    numbers_list = []
+
+    def validate_input(message="Ingrese un número entero positivo:  \n"):
+        """
+        Requests that the user enters a valid positive integer
+
+        Args:
+            message: the message to be displayed to the user
+
+        Returns:
+            int: a positive integer
+        """
+
+        wrong_number_msg = "Error: El número debe ser positivo (mayor que 0). Intente nuevamente."
+        wrong_input_msg = "Error: Debe ingresar un número entero válido. Intente nuevamente."
+
+        while True:
+            try:
+                input_number = int(input(message))
+                if input_number > 0:
+                    print("Numero aceptado \n")
+                    return input_number
+                else:
+                    print(wrong_number_msg)
+            except ValueError:
+                print(wrong_input_msg)
+
+    print("Por favor ingrese tres numeros y se calculará un promedio sobre ellos \n")
+
+    while len(numbers_list) < 3:
+        numbers_list.append(validate_input())
+
+    if len(numbers_list) != 0:
+        print(
+            f" el promedio es estos 3 numeros es: {(numbers_list[0] + numbers_list[1] + numbers_list[2]) / len(numbers_list)} \n")
+
+    return 0
+    # Fin
+
+
 # ejercicio_1()
 # ejercicio_2()
 # ejercicio3()
@@ -239,4 +289,8 @@ def ejercicio_9():
 # ejercicio_6()
 # ejercicio_7()
 # ejercicio_8()
-ejercicio_9()
+# ejercicio_9()
+# ejercicio_10()
+
+# GitHub url for the repository.
+# https://github.com/mercadogabriel91/tec-programacion
