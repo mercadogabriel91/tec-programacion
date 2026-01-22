@@ -138,13 +138,46 @@ def ejercicio_6():
     return 0
     # Fin
 
+
 # ====================================================================
 # EJERCICIO 7: [Crear un programa que pida al usuario dos números enteros distintos del 0 y muestre por
 # pantalla el resultado de sumarlos, dividirlos, multiplicarlos y restarlos.]
 # ====================================================================
 # El código del ejercicio 1 aquí
 def ejercicio_7():
-    print("ejercicio 7")
+    def validate_input(message="Ingrese un número distinto de 0 \n"):
+        """
+        Requests that the user enters a non-zero number
+
+        Args:
+            message: the message to be displayed to the user
+
+        Returns:
+            int: a non-zero number
+        """
+
+        wrong_number_msg = "Error: El número debe distinto a 0. Intente nuevamente."
+        wrong_input_msg = "Error: Debe ingresar un número válido. Intente nuevamente."
+
+        while True:
+            try:
+                input_number = int(input(message))
+                if input_number != 0:
+                    print("Numero aceptado \n")
+                    return input_number
+                else:
+                    print(wrong_number_msg)
+            except ValueError:
+                print(wrong_input_msg)
+
+    numbers_to_multiply = []
+    print("Bienvenido! se requieren dos números enteros para multiplicar")
+
+    while len(numbers_to_multiply) < 2:
+        numbers_to_multiply.append(int(validate_input()))
+
+    print(
+        f"el producto de multiplicar {numbers_to_multiply[0]} x {numbers_to_multiply[1]} es igual a {numbers_to_multiply[0] * numbers_to_multiply[1]}\n")
 
     return 0
     # Fin
@@ -155,3 +188,4 @@ def ejercicio_7():
 # ejercicio_4()
 # ejercicio_5()
 # ejercicio_6()
+# ejercicio_7()
