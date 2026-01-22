@@ -205,6 +205,32 @@ def ejercicio_8():
     return 0
     # Fin
 
+
+# ====================================================================
+# EJERCICIO 9: [Crear un programa que pida al usuario una temperatura en grados Celsius e imprima por
+# pantalla su equivalente en grados Fahrenheit. Tener en cuenta la siguiente equivalencia:
+# 𝑇𝑒𝑚𝑝𝑒𝑟𝑎𝑡𝑢𝑟𝑎 𝑒𝑛 𝐹𝑎ℎ𝑟𝑒𝑛ℎ𝑒𝑖𝑡 = 9/5 * 𝑇𝑒𝑚𝑝𝑒𝑟𝑎𝑡𝑢𝑟𝑎 𝑒𝑛 𝐶𝑒𝑙𝑠𝑖𝑢𝑠 + 32
+# Despejamos la ecuación:
+# Tc = 𝑇𝑒𝑚𝑝𝑒𝑟𝑎𝑡𝑢𝑟𝑎 𝑒𝑛 𝐶𝑒𝑙𝑠𝑖𝑢𝑠
+# Tf = 𝑇𝑒𝑚𝑝𝑒𝑟𝑎𝑡𝑢𝑟𝑎 𝑒𝑛 𝐹𝑎ℎ𝑟𝑒𝑛ℎ𝑒𝑖𝑡
+# Tc = (Tf - 32) / (9/5)]
+# ====================================================================
+# El código del ejercicio 9 aquí
+def ejercicio_9():
+    def convert_celsius_to_fahrenheit(celsius_degrees):
+        return (celsius_degrees * 9 / 5) + 32
+
+    print("Calculadora equivalencia °F a °C \n")
+
+    c_degrees = int(input("Por favor ingrese un numero en grados 𝐶𝑒𝑙𝑠𝑖𝑢𝑠 (°C) \n"))
+    fahrenheit_degrees = convert_celsius_to_fahrenheit(c_degrees)
+
+    print(f"El equivalente a {c_degrees} °C en °F es igual a {fahrenheit_degrees}\n")
+
+    return 0
+    # Fin
+
+
 # ejercicio_1()
 # ejercicio_2()
 # ejercicio3()
@@ -212,4 +238,5 @@ def ejercicio_8():
 # ejercicio_5()
 # ejercicio_6()
 # ejercicio_7()
-ejercicio_8()
+# ejercicio_8()
+ejercicio_9()
