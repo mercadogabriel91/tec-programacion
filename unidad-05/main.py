@@ -88,10 +88,6 @@ def ejercicio_4():
             except ValueError:
                 print(wrong_input_msg)
 
-    # Ejemplo de uso:
-    # edad = obtener_entero_positivo("Ingrese su edad: ")
-    # print(f"Edad ingresada: {edad}")
-
     radius_input_string = "Por favor ingrese su radio, el mismo debe ser un numero entero\n"
     radius = validate_radius_input(radius_input_string)
 
@@ -123,9 +119,39 @@ def ejercicio_5():
     return 0
     # Fin
 
+    # ====================================================================
+
+
+# EJERCICIO 6: [Crear un programa que pida al usuario un número e imprima por pantalla la tabla de
+# multiplicar de dicho número.]
+# ====================================================================
+# El código del ejercicio 6 aquí
+def ejercicio_6():
+    multiplier_list = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+    # Acá podría agregarse una validación del input para un número entero positivo como en el Ej 4
+    number_to_multiply = int(
+        input("Por favor ingrese un numero y a cambio recibirá la tabla de multiplicación del mismo:\n "))
+
+    for number in multiplier_list:
+        print(f"{number_to_multiply} x {number} = {number * number_to_multiply}\n")
+
+    return 0
+    # Fin
+
+# ====================================================================
+# EJERCICIO 7: [Crear un programa que pida al usuario dos números enteros distintos del 0 y muestre por
+# pantalla el resultado de sumarlos, dividirlos, multiplicarlos y restarlos.]
+# ====================================================================
+# El código del ejercicio 1 aquí
+def ejercicio_7():
+    print("ejercicio 7")
+
+    return 0
+    # Fin
 
 # ejercicio_1()
 # ejercicio_2()
 # ejercicio3()
 # ejercicio_4()
-ejercicio_5()
+# ejercicio_5()
+# ejercicio_6()
