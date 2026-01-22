@@ -182,6 +182,29 @@ def ejercicio_7():
     return 0
     # Fin
 
+
+# ====================================================================
+# EJERCICIO 8: [Crear un programa que pida al usuario su altura y su peso e imprima por pantalla su índice
+# de masa corporal. Tener en cuenta que el índice de masa corporal se calcula del siguiente
+# modo: 𝐼𝑀𝐶 =
+# 𝑝𝑒𝑠𝑜 𝑒𝑛 𝑘𝑔
+# 2
+# (𝑎𝑙𝑡𝑢𝑟𝑎 𝑒𝑛 𝑚)]
+# ====================================================================
+# El código del ejercicio 8 aquí
+def ejercicio_8():
+    weight = 0
+    height = 0
+
+    print("Calculadora de indice de masa corporal (IMC) \n")
+    weight = float(input("Por favor ingrese su peso en Kg \n"))
+    height = float(input("Por favor ingrese su altura en m (hasta 2 decimales separados por un punto: ej 1.85)\n"))
+
+    print(f"El IMC calculado es de {weight / (height * height)}")
+
+    return 0
+    # Fin
+
 # ejercicio_1()
 # ejercicio_2()
 # ejercicio3()
@@ -189,3 +212,4 @@ def ejercicio_7():
 # ejercicio_5()
 # ejercicio_6()
 # ejercicio_7()
+ejercicio_8()
