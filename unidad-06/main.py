@@ -259,6 +259,9 @@ def ejercicio_10():
     return 0
     # Fin
 
+# URL al repositorio:
+# https://github.com/mercadogabriel91/tec-programacion
+
 # ejercicio_1()
 # ejercicio_2()
 # ejercicio_3()
