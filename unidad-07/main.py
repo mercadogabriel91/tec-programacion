@@ -1,4 +1,5 @@
 from typing import List
+import random
 
 
 # ====================================================================
@@ -106,7 +107,77 @@ def ejercicio_4():
     # Fin
 
 
+# ====================================================================
+# EJERCICIO 5: [Crea un juego en el que el usuario deba adivinar un número aleatorio entre 0 y 9. Al final,
+# el programa debe mostrar cuántos intentos fueron necesarios para acertar el número.]
+# ====================================================================
+# El código del ejercicio 5 aquí
+def ejercicio_5():
+    number_of_tries: int = 0
+    number_to_guess: int = random.randint(0, 9)
+
+    print("Adiviná el número entre 0 y 9. \n")
+
+    while True:
+        number_of_tries += 1
+        guess: int = int(input("Tu intento: \n"))
+        if guess == number_to_guess:
+            print(f"Correcto! Lo adivinaste en {number_of_tries} intento(s).\n")
+
+            break
+        print("No es ese. Intentá de nuevo.\n")
+
+    return 0
+    # Fin
+
+
+# ====================================================================
+# EJERCICIO 6: [Desarrolla un programa que imprima en pantalla todos los números pares comprendidos
+# entre 0 y 100, en orden decreciente.]
+# ====================================================================
+# El código del ejercicio 6 aquí
+def ejercicio_6():
+    for n in range(100, -1, -2):
+        print(n)
+    return 0
+    # Fin
+
+
+# ====================================================================
+# EJERCICIO 7: [Crea un programa que calcule la suma de todos los números comprendidos entre 0 y un
+# número entero positivo indicado por el usuario.]
+# ====================================================================
+# El código del ejercicio 7 aquí
+def ejercicio_7():
+    n: int = int(input("Ingresa un número entero positivo: \n"))
+
+    if n < 0:
+        print("El número debe ser positivo.\n")
+        return 0
+    total: int = sum(range(n + 1))
+    print(f"La suma de 0 hasta {n} es {total}.\n")
+
+    return 0
+    # Fin
+
+
+# ====================================================================
+# EJERCICIO 8: [Escribe un programa que permita al usuario ingresar 100 números enteros. Luego, el
+# programa debe indicar cuántos de estos números son pares, cuántos son impares, cuántos
+# son negativos y cuántos son positivos. (Nota: para probar el programa puedes usar una
+# cantidad menor, pero debe estar preparado para procesar 100 números con un solo
+# cambio)]
+# ====================================================================
+# El código del ejercicio 8 aquí
+def ejercicio_8():
+    return 0
+    # Fin
+
+
 # ejercicio_1()
 # ejercicio_2()
 # ejercicio_3()
-ejercicio_4()
+# ejercicio_4()
+# ejercicio_5()
+# ejercicio_6()
+ejercicio_7()
