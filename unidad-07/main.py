@@ -72,6 +72,41 @@ def ejercicio_3():
     # Fin
 
 
+# ====================================================================
+# EJERCICIO 4: [Elabora un programa que permita al usuario ingresar números enteros y los sume en
+# secuencia. El programa debe detenerse y mostrar el total acumulado cuando el usuario
+# ingrese un 0.]
+# ====================================================================
+# El código del ejercicio 4 aquí
+def ejercicio_4():
+    counter: int = 0
+    reading: bool = True
+    initial_message: str = "El programa le pedirá que ingrese números y los sumará hasta que ingrese 0 o un input incorrecto: \n"
+    exit_message: str = "El programa será finalizado...\n"
+
+    print(initial_message)
+
+    while reading:
+        try:
+            user_input_number = int(input("Por favor ingrese el numero: \n"))
+        except ValueError:
+            print("Valor no válido. Finalizando.")
+            reading = False
+
+            break
+        if user_input_number != 0:
+            counter += user_input_number
+            print(f"La suma total hasta ahora es {counter} \n")
+        else:
+            print(exit_message)
+            print(f"La suma final es {counter} \n")
+            reading = False
+
+    return 0
+    # Fin
+
+
 # ejercicio_1()
 # ejercicio_2()
-ejercicio_3()
+# ejercicio_3()
+ejercicio_4()
