@@ -1,6 +1,7 @@
 from typing import List
 import random
 
+
 # ====================================================================
 # EJERCICIO 1: [Crea un programa que imprima en pantalla todos los números enteros desde 0 hasta 100
 # (incluyendo ambos extremos), en orden creciente, mostrando un número por línea.]
@@ -233,6 +234,42 @@ def ejercicio_8():
     # Fin
 
 
+# ====================================================================
+# EJERCICIO 9: [Elabora un programa que permita al usuario ingresar 100 números enteros y luego calcule
+# la media de esos valores. (Nota: puedes probar el programa con una cantidad menor, pero
+# debe poder procesar 100 números cambiando solo un valor).]
+# ====================================================================
+# El código del ejercicio 9 aquí
+def ejercicio_9():
+    amount: int = 100  # Cambiar solo este valor para probar con menos o más
+    numbers_sum: int = 0
+
+    print(f"Ingrese {amount} números enteros.")
+    for i in range(amount):
+        numbers_sum += int(input(f"Número {i + 1}/{amount}: "))
+
+    average: float = numbers_sum / amount
+    print(f"La media de los {amount} valores es {average}.")
+    return 0
+    # Fin
+
+
+# ====================================================================
+# EJERCICIO 10: [Escribe un programa que invierta el orden de los dígitos de un número ingresado por el
+# usuario. Ejemplo: si el usuario ingresa 547, el programa debe mostrar 745.]
+# ====================================================================
+# El código del ejercicio 10 aquí
+def ejercicio_10():
+    n: int = int(input("Ingrese un número entero: "))
+    sign: int = -1 if n < 0 else 1
+    digits: List[str] = list(str(abs(n)))
+    digits.reverse()
+
+    opposite: int = sign * int("".join(digits))
+    print(f"Con dígitos invertidos: {opposite}")
+    return 0
+    # Fin
+
 # ejercicio_1()
 # ejercicio_2()
 # ejercicio_3()
@@ -240,4 +277,6 @@ def ejercicio_8():
 # ejercicio_5()
 # ejercicio_6()
 # ejercicio_7()
-#ejercicio_8()
+# ejercicio_8()
+# ejercicio_9()
+# ejercicio_10()
