@@ -1,7 +1,6 @@
 from typing import List
 import random
 
-
 # ====================================================================
 # EJERCICIO 1: [Crea un programa que imprima en pantalla todos los números enteros desde 0 hasta 100
 # (incluyendo ambos extremos), en orden creciente, mostrando un número por línea.]
@@ -170,6 +169,66 @@ def ejercicio_7():
 # ====================================================================
 # El código del ejercicio 8 aquí
 def ejercicio_8():
+    def is_even(number: int) -> bool:
+        number: int = int(number)
+        if number % 2 == 0:
+            return True
+        else:
+            return False
+
+    def is_positive(number: int) -> bool:
+        number: int = int(number)
+        if number > 0:
+            return True
+        else:
+            return False
+
+    def interrupt_execution(user_input: str) -> bool:
+        """True and will interrupt if you input a letter"""
+        try:
+            int(user_input.strip())
+            return False
+        except ValueError:
+            return True
+
+    initial_message: str = "El programa le permitirá ingresar como maximo 100 números enteros para clasificar, puede finalizar el proceso ingresando una letra en cualquier momento \n"
+    reading: bool = True
+    counter: int = 0
+    even_numbers_list = []
+    odd_numbers_list = []
+    even_negative_numbers_list = []
+    even_positive_numbers_list = []
+    odd_negative_numbers_list = []
+    odd_positive_numbers_list = []
+
+    print(initial_message)
+    while reading and counter < 101:
+        string_input: str = input("Ingrese un numero \n")
+        if interrupt_execution(string_input):
+            break
+        else:
+            captured_value = int(string_input)
+            if captured_value != 0:
+                if is_even(captured_value):
+                    even_numbers_list.append(captured_value)
+                    if is_positive(captured_value):
+                        even_positive_numbers_list.append(captured_value)
+                    else:
+                        even_negative_numbers_list.append(captured_value)
+                else:
+                    odd_numbers_list.append(captured_value)
+                    if is_positive(captured_value):
+                        odd_positive_numbers_list.append(captured_value)
+                    else:
+                        odd_negative_numbers_list.append(captured_value)
+            else:
+                print("El 0 es un numero no invalido")
+
+        print(
+            f"Los numeros pares son {len(even_numbers_list)} de los cuales: {len(even_positive_numbers_list)} son positivos y {len(even_negative_numbers_list)} son negativos \n")
+        print(
+            f"Los numeros in-pares son {len(odd_numbers_list)} de los cuales: {len(odd_positive_numbers_list)} son positivos y {len(odd_negative_numbers_list)} son negativos \n")
+
     return 0
     # Fin
 
@@ -180,4 +239,5 @@ def ejercicio_8():
 # ejercicio_4()
 # ejercicio_5()
 # ejercicio_6()
-ejercicio_7()
+# ejercicio_7()
+#ejercicio_8()
