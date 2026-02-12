@@ -1,6 +1,9 @@
 from typing import List
 import random
 
+# ** COMO USAR **
+# Simplemente des-comentar el llamado a la función que se quiera probar
+# al pie del archivo y ejecutar main.py
 
 # ====================================================================
 # EJERCICIO 1: [Crea un programa que imprima en pantalla todos los números enteros desde 0 hasta 100
@@ -270,6 +273,8 @@ def ejercicio_10():
     return 0
     # Fin
 
+# Repository:
+# https://github.com/mercadogabriel91/tec-programacion
 # ejercicio_1()
 # ejercicio_2()
 # ejercicio_3()
