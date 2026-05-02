@@ -148,3 +148,7 @@ ayso/
 curso-ingreso/unidad-07/*
 programacion-1/fechas-examenes
 programacion-1/tps/*.zip
+programacion-1/tps/**/*.zip
+programacion-1/tps/**/*.pdf
+programacion-1/tps/**/*.md
+programacion-1/*/*.pdf
