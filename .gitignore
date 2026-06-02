@@ -145,10 +145,35 @@ Desktop.ini
 
 #direcies
 ayso/
+# curso ingreso
 curso-ingreso/unidad-07/*
+# Prog 1
 programacion-1/fechas-examenes
 programacion-1/tps/*.zip
 programacion-1/tps/**/*.zip
 programacion-1/tps/**/*.pdf
 programacion-1/tps/**/*.md
 programacion-1/*/*.pdf
+# OE
+organizacion-empresarial/tps/**/*.pdf
+organizacion-empresarial/tps/**/*.md
+organizacion-empresarial/tps/**/*.zip
+organizacion-empresarial/tps/**/*.csv
+organizacion-empresarial/tps/**/*.xlsx
+organizacion-empresarial/tps/**/*.xls
+organizacion-empresarial/tps/**/*.json
+organizacion-empresarial/tps/**/*.xml
+organizacion-empresarial/tps/**/*.txt
+organizacion-empresarial/tps/**/*.html
+organizacion-empresarial/tps/**/*.png
+organizacion-empresarial/material/**/*.pdf
+organizacion-empresarial/material/**/*.md
+organizacion-empresarial/material/**/*.zip
+organizacion-empresarial/material/**/*.csv
+organizacion-empresarial/material/**/*.xlsx
+organizacion-empresarial/material/**/*.xls
+organizacion-empresarial/material/**/*.json
+organizacion-empresarial/material/**/*.xml
+organizacion-empresarial/material/**/*.txt
+organizacion-empresarial/material/**/*.html
+organizacion-empresarial/material/**/*.png
