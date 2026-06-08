@@ -154,6 +154,7 @@ programacion-1/tps/**/*.zip
 programacion-1/tps/**/*.pdf
 programacion-1/tps/**/*.md
 programacion-1/*/*.pdf
+programacion-1/**/*.pdf
 # OE
 organizacion-empresarial/tps/**/*.pdf
 organizacion-empresarial/tps/**/*.md
