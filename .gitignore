@@ -144,7 +144,11 @@ ehthumbs.db
 Desktop.ini
 
 #direcies
-ayso/
+ayso/**/*.md
+ayso/**/*.pdf
+ayso/**/*.zip
+ayso/**/*.png
+ayso/**/*.txt
 # curso ingreso
 curso-ingreso/unidad-07/*
 # Prog 1
@@ -155,6 +159,8 @@ programacion-1/tps/**/*.pdf
 programacion-1/tps/**/*.md
 programacion-1/*/*.pdf
 programacion-1/**/*.pdf
+programacion-1/**/*.txt
+programacion-1/**/*.zip
 # OE
 organizacion-empresarial/tps/**/*.pdf
 organizacion-empresarial/tps/**/*.md
