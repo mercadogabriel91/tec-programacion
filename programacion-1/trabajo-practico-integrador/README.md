@@ -3,8 +3,7 @@
 Aplicación de consola en Python 3 para gestionar información de países: altas, actualizaciones, búsquedas, filtros, ordenamientos y estadísticas.
 
 ## Participantes
-
-<!-- Completar con nombres del grupo -->
+Gabriel Emiliano Mercado
 
 ## Requisitos
 
