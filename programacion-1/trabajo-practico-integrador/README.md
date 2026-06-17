@@ -25,6 +25,9 @@ Requiere conexión a internet:
 python3 generar_datos.py
 ```
 
+### URLs adicionales: 
+1. **Video explicando** — https://youtu.be/-xfSo7MxmzY
+
 ## Estructura del proyecto
 
 | Archivo | Descripción |
