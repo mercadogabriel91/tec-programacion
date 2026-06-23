@@ -115,6 +115,7 @@ Ver [`.env.example`](.env.example).
 ```
 correr_bot.sh            → script para levantar DB + bot
 docker-compose.yml
+bpmn-files               → Archivos bpmn para ver las estructuras
 bot/
   main.py                → entrada CLI
   states.py              → máquina de estados (BPMN)
