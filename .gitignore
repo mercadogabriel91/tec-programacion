@@ -184,3 +184,6 @@ organizacion-empresarial/material/**/*.xml
 organizacion-empresarial/material/**/*.txt
 organizacion-empresarial/material/**/*.html
 organizacion-empresarial/material/**/*.png
+
+# Java / IntelliJ compiler output
+out/
