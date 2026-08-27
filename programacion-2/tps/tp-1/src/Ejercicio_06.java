@@ -26,3 +26,7 @@ public class Ejercicio_06 {
         scanner.close();
     }
 }
+
+/*
+ * //REPO URL: https://github.com/mercadogabriel91/tec-programacion/tree/master/programacion-2/tps/tp-1/src
+ */
