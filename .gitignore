@@ -143,6 +143,13 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 
+# Matematica 1 - TPI drafts / entregables (solo codigo en el repo)
+matematica-1/tps/tpi-2/drafts/
+matematica-1/tps/**/*.pdf
+matematica-1/tps/**/*.pptx
+matematica-1/tps/**/*.zip
+matematica-1/tps/tpi-2/*.png
+
 #direcies
 ayso/**/*.md
 ayso/**/*.pdf
